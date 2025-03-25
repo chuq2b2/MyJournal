@@ -1,0 +1,209 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+/* NAV BAR */
+
+#logout-btn:hover {
+  background-color: #D3494E;
+  color: white;
+}
+
+nav {
+  gap: 20px; 
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+.router-link-active {
+  text-decoration: underline;
+}
+
+
+/* WRAPPER AROUND ALL CONTENT */
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* UNIVERSAL POST DESIGN */
+.post-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card {
+  max-width: 800px; 
+  margin: 20px auto; 
+  padding: 20px 30px; 
+  background: #ffffff; 
+  border-radius: 10px; 
+  border: 1px solid black;
+  width: 100%;
+  overflow: hidden;
+}
+
+.post-card h2 {
+  font-size: 28px; 
+  color: #333333; 
+  margin-bottom: 15px; 
+}
+
+.post-card .genres {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+.post-card .genres ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: center; 
+}
+
+.post-card .genres li {
+  background-color: #f0f0f0; 
+  color: #666666; 
+  font-size: 14px; 
+  padding: 5px 10px; 
+  border-radius: 5px;
+}
+
+.post-card p {
+  font-size: 16px; 
+  line-height: 1.6; 
+  color: #444444; 
+  margin-top: 20px; 
+  word-wrap: break-word; 
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .post-card {
+    padding: 15px; 
+  }
+  .post-card h2 {
+    font-size: 24px; 
+  }
+  .post-card p {
+    font-size: 15px; 
+  }
+}
+
+.filter-button{
+  background: #ffffff; 
+  border-radius: 5px; 
+  border: 1px solid black;
+  margin-left: 10px;
+} 
+
+.home-image{
+  position: relative;
+  background-image: url('space-cat.jpg');
+  background-size: cover;
+  background-position: center; 
+  height: 450px; 
+
+}
+
+/* SIGN-IN SIGN-UP FORMS */
+.sign-in-form, .sign-up-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-bottom: 2em;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.sign-in-form input, .sign-up-form input {
+    width: calc(100% - 50px);
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+}
+
+.sign-in-form input:focus, .sign-up-form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+.sign-in-form h2, .sign-up-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.7em;
+}
+
+.sign-in-form label, .sign-up-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+
+.sign-in-form button, .sign-up-form button {
+width: 100%;
+font-size: 1em;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 0.7em;
+}
+
+.sign-in-form button:hover, .sign-up-form button:hover {
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sign-in-form button[type="button"], .sign-up-form button[type="button"] {
+  width: auto;
+  background-color: transparent;
+  color: #007bff;
+  font-size: 0.9em;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.sign-in-form button[type="button"]:hover, .sign-up-form button[type="button"]:hover  {
+  color: #0056b3;
+}
+
+.sign-in-form p, .sign-up-form p {
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 0.5em;
+}
