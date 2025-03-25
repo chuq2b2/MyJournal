@@ -25,12 +25,12 @@ import { getAuth } from 'firebase/auth'
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: <INSERT YOUR API KEY>,
-  authDomain: <INSERT YOUR AUTH DOMAIN>,
-  projectId: <INSERT PROJECT ID>,
-  storageBucket: <INSERT STORAGE BUCKEt>,
-  messagingSenderId: <INSERT MESSAGING SENDER ID>,
-  appId: <INSERT APP ID>
+  apiKey: "INSERT_YOUR_API_KEY",
+  authDomain: "INSERT_YOUR_AUTH_DOMAIN",
+  projectId: "INSERT_PROJECTID",
+  storageBucket: "INSERT_STORAGE_BUCKET",
+  messagingSenderId: "INSERT_MESSAGING_SENDER_ID",
+  appId: "INSERT_APP_ID"
 };
 
 // Initialize Firebase
