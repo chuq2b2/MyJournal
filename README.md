@@ -1,6 +1,6 @@
 # My Journal
 
-My Journal is a blog where you can share your funny stores and see others as well. 
+My Journal is a blog where you can share your funny stores and see others as well. My Journal use Vue 3 for the Frontend and Firebase for backend.
 
 ## Recommended IDE Setup
 
